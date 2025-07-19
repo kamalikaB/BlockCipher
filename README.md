@@ -59,26 +59,25 @@ The process follows these steps (refer to `method_diagram.pdf` for a visual repr
 
 ## Repository Structure
 
-- **`generate_8bit_rule_vectors.cpp`**  
-  Generates 8-bit rule vectors.
-- **`check_max_cycle_length_8bit.cpp`**  
-  Filters 8-bit vectors by cycle length.
-- **`generate_space_time_diagrams.py`**  
-  Creates space-time diagrams for randomness checks.
-- **`check_max_cycle_length_16bit.py`**  
-  Checks cycle length for 16-bit vectors.
-- **`estimate_cycle_length_32bit.cpp`**  
-  Estimates cycle length for 32-bit vectors heuristically.
-- **`LengthChecker_64bits.cpp`**  
-  Estimates properties (e.g., cycle length) for 64-bit vectors.
-- **`dieharder_test_64bit.c`**  
-  Runs *Dieharder* test on 64-bit vectors.
-- **`encrypt_with_64bit_rule_vectors.cpp`**  
-  Encrypts plaintext with 64-bit vectors (assumed extension: `.cpp`).
-- **`hardware_analysis_verilog.v`**  
-  Verilog code for *Vivado* hardware analysis.
-- **`method_diagram.pdf`**  
-  Visual workflow of the project.
+- **`README.md`**: Overview and instructions for the project.
+- **`LICENSE`**: MIT License governing the use of this software.
+
+- **`docs/`**
+  - **`method_diagram.pdf`**: Visual workflow of the project.
+
+- **`src/`**
+  - **`cpp/`**
+    - **`check_max_cycle_length_8bit.cpp`**: Filters 8-bit vectors by cycle length.
+    - **`dieharder_test_64bit.c`**: Runs *Dieharder* test on 64-bit vectors.
+    - **`encrypt_with_64bit_rule_vectors.cpp`**: Encrypts plaintext with 64-bit vectors (assumed extension: `.cpp`).
+    - **`estimate_cycle_length_32bit.cpp`**: Estimates cycle length for 32-bit vectors heuristically.
+    - **`generate_8bit_rule_vectors.cpp`**: Generates 8-bit rule vectors.
+    - **`LengthChecker_64bits.cpp`**: Estimates properties (e.g., cycle length) for 64-bit vectors.
+  - **`python/`**
+    - **`check_max_cycle_length_16bit.py`**: Checks cycle length for 16-bit vectors.
+    - **`generate_space_time_diagrams.py`**: Creates space-time diagrams for randomness checks.
+  - **`verilog/`**
+    - **`hardware_analysis_verilog.v`**: Verilog code for *Vivado* hardware analysis.
 
 ---
 
